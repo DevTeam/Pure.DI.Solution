@@ -1,6 +1,6 @@
 ﻿using Pure.DI;
 
-namespace App;
+namespace PackageRefApp;
 
 internal partial class Composition
 {

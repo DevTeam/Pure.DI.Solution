@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <OutputType>Exe</OutputType>
         <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <IsPackable>true</IsPackable>
-        <ImplicitUsings>false</ImplicitUsings>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,7 +12,7 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <Compile Update="Composition.cs" Pack="true" PackagePath="contentFiles/cs/any/Lib"/>
+        <PackageReference Include="Lib" Version="1.0.0" />
     </ItemGroup>
 
 </Project>

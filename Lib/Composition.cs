@@ -3,10 +3,9 @@ using static Pure.DI.Lifetime;
 
 namespace Lib;
 
-internal partial class Composition
+internal class Composition
 {
-    [System.Diagnostics.Conditional("DI")]
     private static void Setup() => 
-        DI.Setup(nameof(Composition), CompositionKind.Internal)
+        DI.Setup(nameof(Composition), CompositionKind.Global)
             .Bind<IInput>().Bind<IOutput>().As(Singleton).To<ConsoleAdapter>();
 }
