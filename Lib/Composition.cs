@@ -7,5 +7,5 @@ internal class Composition
 {
     private static void Setup() => 
         DI.Setup(nameof(Composition), CompositionKind.Global)
-            .Bind<IInput>().Bind<IOutput>().As(Singleton).To<ConsoleAdapter>();
+            .Bind().As(Singleton).To<ConsoleAdapter>();
 }
