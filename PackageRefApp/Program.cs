@@ -4,15 +4,11 @@ using Composition = PackageRefApp.Composition;
 var composition = new Composition();
 return composition.Root.Run(args);
 
-internal partial class Program(IInput input, IOutput output)
+internal partial class Program(IService service)
 {
     private int Run(string[] args)
     {
-        output.WriteLine("Hello!");
-
-        output.WriteLine("Press the Enter key to exit.");
-        input.ReadLine();
-
+        service.Run();
         return 0;
     }
 }

@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageRefApp", "PackageRefApp\PackageRefApp.csproj", "{947A666D-9917-4975-B3E4-7338222F95B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib.Tests", "Lib.Tests\Lib.Tests.csproj", "{E45DA612-730F-4E26-B2D7-86DD380980EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{947A666D-9917-4975-B3E4-7338222F95B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{947A666D-9917-4975-B3E4-7338222F95B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{947A666D-9917-4975-B3E4-7338222F95B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E45DA612-730F-4E26-B2D7-86DD380980EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E45DA612-730F-4E26-B2D7-86DD380980EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E45DA612-730F-4E26-B2D7-86DD380980EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E45DA612-730F-4E26-B2D7-86DD380980EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
