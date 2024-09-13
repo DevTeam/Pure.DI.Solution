@@ -6,13 +6,13 @@ public class MyServiceTests
 {
     private readonly Mock<IOutput> _output = new();
     private readonly Mock<IInput> _input = new();
-    
+
     [Fact]
     public void ShouldAskToPressEnter()
     {
         // Given
         var service = CreateInstance();
-        
+
         // When
         service.Run();
 
@@ -26,7 +26,7 @@ public class MyServiceTests
     {
         // Given
         var service = CreateInstance();
-        
+
         // When
         service.Run();
 
@@ -34,7 +34,7 @@ public class MyServiceTests
         _input.Verify(i => i.ReadLine());
     }
 
-    private MyService CreateInstance() => 
+    private MyService CreateInstance() =>
         new(
             Mock.Of<ILog<MyService>>(),
             _input.Object,

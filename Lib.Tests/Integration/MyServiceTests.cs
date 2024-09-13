@@ -7,12 +7,12 @@ public partial class MyServiceTests
 {
     private readonly Mock<IOutput> _output = new();
     private readonly Mock<IInput> _input = new();
-    
+
     [Fact]
     public void ShouldAskToPressEnter()
     {
         // Given
-        
+
         // When
         Service.Run();
 
@@ -20,12 +20,12 @@ public partial class MyServiceTests
         _output.Verify(i => i.WriteLine("Hello!"));
         _output.Verify(i => i.WriteLine("Press the Enter key to exit."));
     }
-    
+
     [Fact]
     public void ShouldWaitForEnter()
     {
         // Given
-        
+
         // When
         Service.Run();
 

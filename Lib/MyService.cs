@@ -9,7 +9,7 @@ public class MyService(
     public void Run()
     {
         log.Info("Running...");
-        
+
         output.WriteLine("Hello!");
 
         output.WriteLine("Press the Enter key to exit.");
