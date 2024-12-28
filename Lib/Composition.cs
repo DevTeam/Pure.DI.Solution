@@ -1,11 +1,12 @@
 ﻿using Pure.DI;
+using static Pure.DI.CompositionKind;
 using static Pure.DI.Lifetime;
 
 namespace Lib;
 
 internal partial class Composition
 {
-    private static void Setup() => DI.Setup(kind: CompositionKind.Internal)
+    private static void Setup() => DI.Setup(kind: Internal)
         .Bind().To<Log<TT>>()
         .Bind().As(Singleton).To<ConsoleAdapter>()
         .Bind().To<MyService>();
