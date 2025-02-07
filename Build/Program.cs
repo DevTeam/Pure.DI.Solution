@@ -24,12 +24,14 @@ new DotNetTest()
     .Build().EnsureSuccess();
 
 new DotNetRun()
+    .WithShortName("App")
     .WithConfiguration("Release")
     .WithProject("App")
     .WithNoBuild(true)
     .Run(timeout: TimeSpan.FromMilliseconds(500));
     
 new DotNetRun()
+    .WithShortName("PackageRefApp")
     .WithConfiguration("Release")
     .WithProject("PackageRefApp")
     .WithNoBuild(true)
