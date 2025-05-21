@@ -4,7 +4,7 @@ using static Pure.DI.Lifetime;
 
 namespace Lib;
 
-internal partial class Composition
+internal class Composition
 {
     private static void Setup() => DI.Setup(kind: Internal)
         .Bind().To<Log<TT>>()
